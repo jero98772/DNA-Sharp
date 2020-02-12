@@ -1,5 +1,24 @@
 import re, sys
-
+"""
+cheat sheet
+Command 	Brainfuck equivalent 	C-equivalent 	Symbols for symbol form
+ATAT 	> 	pointer++ / newpointer++ *** 	>
+ATGC 	< 	pointer-- / newpointer-- *** 	<
+ATTA 	+ 		+
+ATCG 	- 		-
+GCAT 	. (Output as ASCII) 		.
+GCGC 	, (ASCII input) 		,
+GCTA 	[ 		[
+GCCG 	] 		]
+TAAT * 		*pointer = *newpointer 	= or := ****
+TAGC * 		*pointer += *newpointer 	+=
+TATA * 		*pointer -= *newpointer 	-=
+TACG * 		*pointer *= *newpointer 	*=
+CGAT * 		*pointer /= *newpointer 	/=
+CGGC 		. (Output as integer value) 	~
+CGTA 		, (Integer input) 	?
+CGCG 		- (NOP) 	X** 
+"""
 fname = sys.argv[1]
 #the argument give the name of file 
 with open(fname, "r") as f:
