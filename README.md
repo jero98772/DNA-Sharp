@@ -16,6 +16,7 @@ The interpreter accepts programs in both line form and helix form. At the moment
 
 *Note:* This many not work as DNA# was intended to due to it being an interpretation of the rather confusing specification.
 
+this progrmaming langue requiere you write upper
 ## External Links
 
  - [**DNA# on Esolangs.org**](https://esolangs.org/wiki/DNA-Sharp)

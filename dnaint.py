@@ -1,19 +1,20 @@
 import re, sys
 
 fname = sys.argv[1]
-
+#the argument give the name of file 
 with open(fname, "r") as f:
     code = f.read()
-
+#open file
 code = re.sub("[^ATCG]","",code)
-
+#regular expreion [^ATCG] repalse "" in file or string
 code = [code[i:i+4] for i in range(0,len(code),4)]
-
+#select in size of instruccion with length 4
 pos = 0
+#position in code can use for debug an error 
 pnt = 0
-
+#ponter is a index of code, where is in code
 tape = [0]
-
+#tape is a secence
 def npointfunc(action):
     global pos, pnt, tape
     oldpnt = tape[pnt]
@@ -126,4 +127,5 @@ def cgcg():
 
 while pos < len(code):
     comm = code[pos]
-    eval(comm.lower() + "()")
+    print(eval(comm.lower() + "()"))
+    
