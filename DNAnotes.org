@@ -1,0 +1,33 @@
+* notes of dna progrmaing langue
+** intruccions 
+*** atat
+**** it works for add  1 space for add new intruccion
+*** atgc
+**** this is to go back a record or a pointer
+*** atta
+**** select of number to registrer
+*** atcg
+**** This goes back 1 nuemro in the pointer
+*** gcta
+**** read a poniter
+*** gcat
+**** print character
+*** gcgc 
+**** recive a key input
+*** cggc
+**** print part of sequense
+*** cgta
+**** int input
+*** taat
+**** =
+*** tagc
+**** +=
+*** tata
+**** -=
+*** tacg
+**** *=
+*** cgat
+**** \=
+*** cgcg 
+**** pass
+
