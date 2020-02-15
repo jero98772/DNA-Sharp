@@ -23,12 +23,10 @@ CGCG 		- (NOP) 	X**
 """
 fname = sys.argv[1]
 
-#the argument give the name of file 
 with open(fname, "r") as f:
     code = f.read()
-#open file
-code = re.sub("[^ATCG#']","",code)
-#regular expreion [^ATCG] repalse "" in file or string
+code = re.sub("[^ATCG]","",code)
+#regular expreion [ATCG] only can be used in code
 code = [code[i:i+4] for i in range(0,len(code),4)]
 #select in size of instruccion with length 4
 pos = 0
@@ -47,7 +45,7 @@ def npointfunc(action):
     pos += 1
     #read the code moving in the secuence
     while code[pos] != "CGCG" and not (comnt  in code[pos]) :
-        #while instruccion are difernt to CGCG
+        #while instruccion are difernt to CGCG execute code
         eval(code[pos].lower()+'()')
         #pass the code to python interpreter
     else :
@@ -57,7 +55,7 @@ def npointfunc(action):
     tape[pnt] = oldpnt
     #extract the intruccion of sequence  and the old instruccion go to secence
     exec('tape[pnt]'+action+'newpnt')
-#ponter
+#register sintaxis
 def atat():
     #sum 1 to pointer ,ponter is a regitrer address in memory and sum 1 is move in memory
     global pos, pnt, tape ,comnt
@@ -203,16 +201,16 @@ def simplecoment():
 
 
    
-if "#" in code[pos]:
-    code[pos] = code[pos+1]
+#if "#" in code[pos]:
+#    code[pos] = code[pos+1]
 while pos < len(code) and not (comnt in code[pos]):
 #comment
 
     comm = code[pos]
     eval(comm.lower() + "()")
-else :
-    code[pos] = code[pos+1]
-    pos+=1
-
-comm = code[pos-1]
-print("error in ",comm,"in intruccion" ,str(pos))
+#else :
+#    code[pos] = code[pos+1]
+#    pos+=1
+#
+#comm = code[pos-1]
+#print("error in ",comm,"in intruccion" ,str(pos))

@@ -1,0 +1,6 @@
+* ATAT
+** craete a registrer  
+* ATTA
+** use number to select number can incremnet for postive numbers decremt for negative 
+* CGGC
+** print number

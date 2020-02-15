@@ -1,0 +1,35 @@
+* notes of dna progrmaing langue
+** intruccions 
+*** atat
+**** move a registrer
+*** atgc
+**** move back 1 registrer
+*** atta
+**** select of number to registrer
+*** atcg
+**** This goes back 1 nuemro in the pointer
+*** gcta
+**** crete loop
+*** gccg
+**** close loop
+*** gcat
+**** print character
+*** gcgc 
+**** recive a key input
+*** cggc
+**** print part of sequense
+*** cgta
+**** int input
+*** taat
+**** =
+*** tagc
+**** +=
+*** tata
+**** -=
+*** tacg
+**** *=
+*** cgat
+**** \=
+*** cgcg 
+**** pass
+
